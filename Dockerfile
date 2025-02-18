@@ -35,6 +35,10 @@ ENV OPENAI_API_KEY=""
 ENV GOOGLE_API_KEY=""
 ENV CODE=""
 ENV ENABLE_MCP=""
+ENV DEEPSEEK_API_KEY=""
+ENV DEFAULT_MODEL=""
+ENV CUSTOM_MODELS=""
+ENV DEEPSEEK_URL=""
 
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next/standalone ./
